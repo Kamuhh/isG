@@ -65,3 +65,5 @@ register_deactivation_hook( __FILE__, [KCDeactivate::class, 'deActivate'] );
 ( new KCDeactivate() );
 
 do_action('kivicare_activate_init');
+// Load IS Resumen de Atención Module
+require_once plugin_dir_path(__FILE__) . 'is-resumen-atencion-loader.php';
