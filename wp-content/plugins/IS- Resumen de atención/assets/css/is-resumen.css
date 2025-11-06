@@ -1,0 +1,11 @@
+.modal .modal-content{ background:#fff; }
+.modal .modal-footer{ display:flex; justify-content:flex-end; gap:.5rem; }
+#kc-summary-wrapper{ background:#fff; }
+#kc-summary-content{ min-height:200px; }
+.isr-hidden{ display:none !important; }
+
+/* Fallback modal behavior if Bootstrap JS not present */
+#kcSummaryModal{ display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:9999; }
+#kcSummaryModal.isr-open{ display:block; }
+.isr-backdrop{ position:fixed; inset:0; background:rgba(0,0,0,.5); z-index:9998; }
+.isr-open .modal-dialog{ position:absolute; top:5%; left:50%; transform:translateX(-50%); }
